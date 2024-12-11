@@ -2,7 +2,7 @@ resource "aws_instance" "wordpress" {
   ami           = "ami-0166fe664262f664c" # Replace with the appropriate AMI for your region
   instance_type = "t2.micro"             # Choose an instance type
   
-  key_name      = "aws2"   # Replace with your existing key pair name
+  key_name      = "new-key-pair-ec2"   # Replace with your existing key pair name
   
   user_data = file("userdata.sh")
   
