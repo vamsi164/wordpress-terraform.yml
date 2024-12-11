@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1" # Replace with the AWS region you want
+}
+
 resource "aws_instance" "wordpress" {
   ami           = "ami-0166fe664262f664c" # Replace with the appropriate AMI for your region
   instance_type = "t2.micro"             # Choose an instance type
