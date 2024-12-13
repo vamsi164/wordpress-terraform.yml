@@ -18,7 +18,7 @@ resource "aws_instance" "wordpress" {
 }
 
 resource "aws_security_group" "wordpress_sg" {
-  name        = "wordpress-sg1"
+  name        = "wordpress-sg2"
   description = "Allow HTTP, HTTPS, and SSH traffic"
 
   ingress {
